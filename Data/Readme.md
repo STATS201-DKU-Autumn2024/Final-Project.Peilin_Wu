@@ -114,7 +114,8 @@ sentiment_df.set_index('time', inplace=True)
 sentiment_df_resampled = sentiment_df.resample('D').mean()  # Resample to daily data
 
 ```
-### Join the datasets: Merge the Bitcoin price data and sentiment data on the timestamp column.
+### Join the datasets: 
+Merge the Bitcoin price data and sentiment data on the timestamp column.
 
 ## 6. Train-Test Split
 ### Time-series data splitting: 

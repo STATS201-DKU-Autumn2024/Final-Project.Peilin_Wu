@@ -34,3 +34,24 @@ The lowest price recorded for the cryptocurrency during the specified time perio
 The opening price of the cryptocurrency at the beginning of the specified time period. This value is often used in conjunction with the closing price to analyze price movements within the period.
 * volume:
 The total trading volume of the cryptocurrency during the specified time period. This metric indicates the level of trading activity and liquidity in the market, which can be an important factor in price movements.
+
+# Preprocessing and harmonization steps
+## Loading the Data
+### Bitcoin Price Data:
+* Load the data from the source (e.g., CSV, API) and ensure the date is properly converted.
+* Convert time: Convert timestamps to human-readable date formats to facilitate time-series analysis.
+* Set index: Set the date column as the index for time-series forecasting.
+、、、
+import pandas as pd
+
+# Load Bitcoin price data
+price_data_url = 'https://raw.githubusercontent.com/STATS201-DKU-Autumn2024/Problem_Set_1.Peilin_Wu/refs/heads/main/Data/bitcoin0.csv'
+price_df = pd.read_csv(price_data_url)
+
+# Convert timestamps to datetime format
+price_df['time'] = pd.to_datetime(price_df['time'], unit='ms')
+price_df.set_index('time', inplace=True)
+
+# Select relevant columns (close, high, low, open, volume)
+price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
+、、、

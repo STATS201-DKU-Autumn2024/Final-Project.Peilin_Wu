@@ -69,5 +69,15 @@ Train the LSTM model:
 ## Step 4: Generate Investment Suggestions
 After training the models, use the predictions to generate investment suggestions based on price fluctuations (e.g., long or short positions based on predicted price trends).
 
+# Expected Outputs
+The expected outputs include:
+* Loss curve: The loss reduction over epochs while training the diffusion and LSTM models.
+* Predicted prices: The future Bitcoin prices predicted by the LSTM model.
+* Investment advice: A suggestion to invest in long or short positions based on the predicted trends and a fluctuation control of 10%.
+## Example Outputs:
+* Predicted price trends for the next few days or weeks.
+* Investment suggestion based on predicted volatility.
+* Visualizations of the Bitcoin price trends and model performance.
 
-
+# Contributor
+Peilin Wu - Project Lead, Data Collection, Model Implementation

@@ -36,7 +36,7 @@ The opening price of the cryptocurrency at the beginning of the specified time p
 The total trading volume of the cryptocurrency during the specified time period. This metric indicates the level of trading activity and liquidity in the market, which can be an important factor in price movements.
 
 # Preprocessing and harmonization steps
-## Loading the Data
+## 1. Loading the Data
 ### Bitcoin Price Data:
 * Load the data from the source (e.g., CSV, API) and ensure the date is properly converted.
 * Convert time: Convert timestamps to human-readable date formats to facilitate time-series analysis.
@@ -55,7 +55,7 @@ price_df.set_index('time', inplace=True)
 # Select relevant columns (close, high, low, open, volume)
 price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
 ```
-## Handling Missing Data
+## 2. Handling Missing Data
 ### Check for missing values:\
 Missing values in the dataset can negatively affect model performance, especially for time-series forecasting.\
 ### Impute or drop missing values:\
@@ -73,7 +73,7 @@ If sentiment data is present
 sentiment_df.isnull().sum()
 sentiment_df.fillna(method='ffill', inplace=True)  # Forward fill sentiment data
 ```
-## Normalization and Scaling
+## 3. Normalization and Scaling
 ### Scale numerical data: 
 For time-series prediction, it is common to normalize the data, especially when using deep learning models like LSTM. Using MinMaxScaler from sklearn ensures the data is within a fixed range (0, 1) and helps the model train more efficiently.
 ```
@@ -89,7 +89,7 @@ If sentiment data is available and needs scaling:
 sentiment_scaler = MinMaxScaler(feature_range=(0, 1))
 sentiment_df[['sentiment_score']] = sentiment_scaler.fit_transform(sentiment_df[['sentiment_score']])
 ```
-## Feature Engineering
+## 4. Feature Engineering
 ### Create additional time-based features:
 For time-series forecasting, additional features like moving averages, percentage change, or rolling windows can help the model capture trends more effectively.
 ```
@@ -102,7 +102,7 @@ price_df['pct_change'] = price_df['close'].pct_change()
 ### Sentiment data preprocessing:
 If sentiment data is available, you may want to preprocess it by calculating weekly or monthly aggregated sentiment scores.
 You might also want to apply NLP techniques to analyze the sentiment text, such as sentiment polarity or word embeddings (though in this case, we assume you are using raw aggregated scores like Google Trends data).
-## Data Harmonization
+## 5. Data Harmonization
 ### Align timestamps: 
 When combining datasets (e.g., Bitcoin prices and sentiment data), it's important to ensure that both datasets have matching timestamps. If the sentiment data is aggregated at a different frequency (e.g., daily, weekly), you'll need to align it with the Bitcoin price data.
 ```
@@ -116,8 +116,14 @@ sentiment_df_resampled = sentiment_df.resample('D').mean()  # Resample to daily 
 ```
 ### Join the datasets: Merge the Bitcoin price data and sentiment data on the timestamp column.
 
+## 6. Train-Test Split
+### Time-series data splitting: 
+Split the data into training and testing sets, ensuring that the test set represents the future (i.e., the data is split chronologically).
 ```
-# Merge Bitcoin price and sentiment data
-combined_df = price_df.join(sentiment_df_resampled, how='left')
+# Train-test split: 80% train, 20% test
+train_size = int(len(combined_df) * 0.8)
+train_data = combined_df[:train_size]
+test_data = combined_df[train_size:]
 
 ```
+

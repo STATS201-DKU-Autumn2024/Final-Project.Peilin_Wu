@@ -39,16 +39,35 @@ matplotlib==3.4.3
 To load the Bitcoin price data, run the following code:
 ```
 import pandas as pd
-
 price_data_url = 'https://raw.githubusercontent.com/STATS201-DKU-Autumn2024/Problem_Set_1.Peilin_Wu/refs/heads/main/Data/bitcoin0.csv'
 price_df = pd.read_csv(price_data_url)
 price_df['time'] = pd.to_datetime(price_df['time'], unit='ms')
 price_df.set_index('time', inplace=True)
 price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
-
 ```
+For market sentiment data (if available), load it as follows:
+```
+sentiment_data_url = 'https://raw.githubusercontent.com/STATS201-DKU-Autumn2024/Problem_Set_1.Peilin_Wu/refs/heads/main/Data/google%20trends/geoMapbitcoin.csv'
+sentiment_df = pd.read_csv(sentiment_data_url)
+```
+## Step 2: Running NLP or Social Network Analysis
+If sentiment analysis is included, preprocess the sentiment data before integrating it into the model. Use any NLP techniques such as tokenization or sentiment analysis (e.g., using TextBlob or transformers library).
 
-jjj
+## Step 3: Training and Evaluating Predictive Models
+Run the diffusion model to denoise the data:
+```
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
+# Diffusion model code (as defined in the notebook) goes here
+```
+Train the LSTM model:
+```
+# LSTM model training and evaluation code as defined in the notebook
+```
+## Step 4: Generate Investment Suggestions
+After training the models, use the predictions to generate investment suggestions based on price fluctuations (e.g., long or short positions based on predicted price trends).
 
 
 

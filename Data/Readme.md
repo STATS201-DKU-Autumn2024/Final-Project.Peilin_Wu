@@ -1,4 +1,4 @@
-# GoogleTrends
+# A. GoogleTrends
 When analyzing the search trends for Bitcoin, Dogecoin, and Ethereum, incorporating sentiment analysis can provide deeper insights. Sentiment analysis is a natural language processing (NLP) technique used to identify and extract sentiments or emotions from text. Here's how you can integrate sentiment analysis with Google Trends' MultiTimeline and GeoMap:
 
 ## Applications of Sentiment Analysis
@@ -17,7 +17,9 @@ GeoMap:
 
 By integrating Google Trends' MultiTimeline and GeoMap with sentiment analysis, you can achieve a comprehensive understanding of Bitcoin, Dogecoin, and Ethereum. This analysis approach not only helps you discern the relationship between search trends and market sentiment but also uncovers regional variations in interest and sentiment. Such a multi-dimensional analysis can provide richer information for decision-making, helping you better navigate the dynamics of the cryptocurrency market.
 
-# Cryptocurrency dataset from CryptoCompare
+
+
+# B. Cryptocurrency dataset from CryptoCompare
 The dataset from CryptoCompare that includes three years of data for Bitcoin, Ethereum, and Dogecoin typically contains several key columns that provide important information about the historical performance of these cryptocurrencies. Here’s a description of what each column represents:
 
 ## Dataset Overview
@@ -35,7 +37,9 @@ The opening price of the cryptocurrency at the beginning of the specified time p
 * volume:
 The total trading volume of the cryptocurrency during the specified time period. This metric indicates the level of trading activity and liquidity in the market, which can be an important factor in price movements.
 
-# Preprocessing and harmonization steps
+
+
+# C. Preprocessing and harmonization steps
 ## 1. Loading the Data
 ### Bitcoin Price Data:
 * Load the data from the source (e.g., CSV, API) and ensure the date is properly converted.

@@ -41,7 +41,7 @@ The total trading volume of the cryptocurrency during the specified time period.
 * Load the data from the source (e.g., CSV, API) and ensure the date is properly converted.
 * Convert time: Convert timestamps to human-readable date formats to facilitate time-series analysis.
 * Set index: Set the date column as the index for time-series forecasting.
-、、、
+```
 import pandas as pd
 
 # Load Bitcoin price data
@@ -54,4 +54,4 @@ price_df.set_index('time', inplace=True)
 
 # Select relevant columns (close, high, low, open, volume)
 price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
-、、、
+```

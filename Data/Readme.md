@@ -55,3 +55,69 @@ price_df.set_index('time', inplace=True)
 # Select relevant columns (close, high, low, open, volume)
 price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
 ```
+## Handling Missing Data
+### Check for missing values:\
+Missing values in the dataset can negatively affect model performance, especially for time-series forecasting.\
+### Impute or drop missing values:\
+For time-series data like Bitcoin prices, interpolation (forward fill, backward fill, linear interpolation) is often used to handle missing values.\
+For other datasets (like sentiment data), either impute values or remove rows/columns with too many missing values.\
+```
+# Check for missing values in the Bitcoin price dataset
+price_df.isnull().sum()
+
+# Forward fill missing data (interpolation) or drop rows/columns
+price_df.fillna(method='ffill', inplace=True)  # Forward fill
+```
+If sentiment data is present
+```
+sentiment_df.isnull().sum()
+sentiment_df.fillna(method='ffill', inplace=True)  # Forward fill sentiment data
+```
+## Normalization and Scaling
+### Scale numerical data: 
+For time-series prediction, it is common to normalize the data, especially when using deep learning models like LSTM. Using MinMaxScaler from sklearn ensures the data is within a fixed range (0, 1) and helps the model train more efficiently.
+```
+from sklearn.preprocessing import MinMaxScaler
+
+# Normalize the Bitcoin price data (scaling the 'close' column)
+scaler = MinMaxScaler(feature_range=(0, 1))
+price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']] = scaler.fit_transform(price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']])
+
+```
+If sentiment data is available and needs scaling:
+```
+sentiment_scaler = MinMaxScaler(feature_range=(0, 1))
+sentiment_df[['sentiment_score']] = sentiment_scaler.fit_transform(sentiment_df[['sentiment_score']])
+```
+## Feature Engineering
+### Create additional time-based features:
+For time-series forecasting, additional features like moving averages, percentage change, or rolling windows can help the model capture trends more effectively.
+```
+# Adding a rolling mean (e.g., 7-day moving average) to the Bitcoin prices
+price_df['rolling_mean'] = price_df['close'].rolling(window=7).mean()
+
+# Calculate daily percentage change (returns)
+price_df['pct_change'] = price_df['close'].pct_change()
+```
+### Sentiment data preprocessing:
+If sentiment data is available, you may want to preprocess it by calculating weekly or monthly aggregated sentiment scores.
+You might also want to apply NLP techniques to analyze the sentiment text, such as sentiment polarity or word embeddings (though in this case, we assume you are using raw aggregated scores like Google Trends data).
+## Data Harmonization
+### Align timestamps: 
+When combining datasets (e.g., Bitcoin prices and sentiment data), it's important to ensure that both datasets have matching timestamps. If the sentiment data is aggregated at a different frequency (e.g., daily, weekly), you'll need to align it with the Bitcoin price data.
+```
+# Assuming sentiment_df has a 'time' column
+sentiment_df['time'] = pd.to_datetime(sentiment_df['time'])
+sentiment_df.set_index('time', inplace=True)
+
+# Resampling sentiment data to match the Bitcoin price data frequency (e.g., daily)
+sentiment_df_resampled = sentiment_df.resample('D').mean()  # Resample to daily data
+
+```
+### Join the datasets: Merge the Bitcoin price data and sentiment data on the timestamp column.
+
+```
+# Merge Bitcoin price and sentiment data
+combined_df = price_df.join(sentiment_df_resampled, how='left')
+
+```

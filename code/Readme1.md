@@ -37,13 +37,15 @@ matplotlib==3.4.3
 # Usage Instructions
 ## Step 1: Loading Datasets
 To load the Bitcoin price data, run the following code:
-```import pandas as pd
+```
+import pandas as pd
 
 price_data_url = 'https://raw.githubusercontent.com/STATS201-DKU-Autumn2024/Problem_Set_1.Peilin_Wu/refs/heads/main/Data/bitcoin0.csv'
 price_df = pd.read_csv(price_data_url)
 price_df['time'] = pd.to_datetime(price_df['time'], unit='ms')
 price_df.set_index('time', inplace=True)
-price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']] ```
+price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
+‘’‘
 
 
 jjj

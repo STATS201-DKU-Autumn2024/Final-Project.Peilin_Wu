@@ -45,7 +45,7 @@ price_df = pd.read_csv(price_data_url)
 price_df['time'] = pd.to_datetime(price_df['time'], unit='ms')
 price_df.set_index('time', inplace=True)
 price_df = price_df[['close', 'high', 'low', 'open', 'volumefrom', 'volumeto']]
-‘’‘
+'''
 
 
 jjj

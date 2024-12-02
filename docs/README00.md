@@ -124,3 +124,32 @@ This report outlines a novel approach to addressing cryptocurrency volatility th
 - Białkowski, J. (2020). Cryptocurrencies in institutional investors’ portfolios: Evidence from industry stop-loss rules. *Economics Letters, 191*, 108834.
 - Fang, F., et al. (2021). Ascertaining price formation in cryptocurrency markets with machine learning. *European Journal of Finance*.
 - Dwivedi, Y. K., et al. (2023). Exploring the Darkverse: A Multi-Perspective Analysis of the Negative Societal Impacts of the Metaverse. *Information Systems Front
+
+# Appendix
+
+## Diffusion Model
+
+### Explanation:
+A **diffusion model** is a type of probabilistic model that simulates the spread of information, values, or behaviors across a network. In the context of this study, diffusion models are used to smooth and denoise the raw data before feeding it into machine learning algorithms. They help capture the underlying structure of the data by accounting for the spread of market behaviors and trends, reducing noise and enhancing the signal that predictive models like LSTM can use to make more accurate forecasts.
+
+### Key Features:
+- **Noise Reduction**: Diffusion models are effective at removing random fluctuations (noise) in data, which can improve the quality of predictions.
+- **Data Smoothing**: By iteratively adjusting the data according to a probabilistic process, they can smooth out irregularities that may distort the results.
+  
+## LSTM (Long Short-Term Memory) Network
+
+### Explanation:
+An **LSTM network** is a type of recurrent neural network (RNN) specifically designed to overcome the vanishing gradient problem in traditional RNNs. It is particularly effective at processing and predicting sequences of data, making it ideal for time-series forecasting, such as predicting cryptocurrency price volatility. LSTMs have memory units that store information over long periods, allowing them to capture long-term dependencies in data.
+
+### Key Features:
+- **Time-Series Prediction**: LSTM is well-suited for forecasting tasks where the data exhibits temporal patterns, such as financial market movements.
+- **Long-Term Dependencies**: It can retain information from earlier time points, which is important for understanding long-term trends in cryptocurrency prices and volatility.
+
+## ChatGPT (Large Language Model)
+
+### Explanation:
+**ChatGPT**, a large language model developed by OpenAI, is a state-of-the-art natural language processing (NLP) tool capable of understanding and generating human-like text based on context. In this model, ChatGPT is used to generate understandable hedge recommendations from the outputs of the LSTM network. It translates complex statistical results and predictions into simple, actionable language that is accessible to both novice and experienced investors.
+
+### Key Features:
+- **Natural Language Processing**: ChatGPT can interpret complex data and convert it into human-readable insights.
+- **Actionable Recommendations**: The model generates user-friendly investment strategies, making it easier for investors to understand and act on the recommendations.

@@ -3,7 +3,6 @@
 
 ## Authors
 - **Peilin Wu**: Lead Researcher, Project Developer
-- **Team Members**: [List other team members and their roles here]
 
 ## Disclaimer
 This project was submitted for **STATS201: Machine Learning for Social Science** at **Duke Kunshan University**, instructed by **Prof. Luyao Zhang** in **Autumn 2024**.
@@ -67,3 +66,20 @@ jupyter notebook model_notebook.ipynb
 ```
 jupyter notebook visualization_notebook.ipynb
 ```
+Dependencies
+
+* Python 3.x
+* PyTorch 1.x (for neural networks)
+* Pandas (for data manipulation)
+* NumPy (for numerical operations)
+* Matplotlib (for plotting)
+* Scikit-learn (for preprocessing and evaluation)
+Please ensure all libraries are installed as specified in the requirements.txt file.
+
+## Example Usage
+
+After running the code, you can visualize the model's predictions for portfolio management and price movements in the Visualizations section of the project. The model will simulate cryptocurrency portfolio optimization based on the historical data, allowing you to track the portfolio's value and the contribution of each asset.
+
+## Contributing
+
+Feel free to contribute by submitting issues or pull requests. If you want to improve the model, explore additional machine learning techniques, or help with documentation, your contributions are welcome.

@@ -71,8 +71,8 @@ After training the models, use the predictions to generate investment suggestion
 
 # Expected Outputs
 The expected outputs include:
-* Loss curve: The loss reduction over epochs while training the diffusion and LSTM models.
-* Predicted prices: The future Bitcoin prices predicted by the LSTM model.
+* Loss curve: The loss reduction over epochs while training the diffusion and transformer models.
+* Predicted prices: The future Bitcoin prices predicted by the transformer model.
 * Investment advice: A suggestion to invest in long or short positions based on the predicted trends and a fluctuation control of 10%.
 * MAE MSE: Both of them are lower than 0.1.
 ## Example Outputs:

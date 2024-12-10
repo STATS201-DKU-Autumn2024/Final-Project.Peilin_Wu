@@ -1,4 +1,4 @@
-# Final Project.Peilin_Wu
+# Final_Project.Peilin_Wu
 # Portfolio Optimization Using Diffusion Models and Transformer Networks
 
 ## Authors

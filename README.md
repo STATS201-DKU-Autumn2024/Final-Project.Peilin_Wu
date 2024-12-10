@@ -47,8 +47,6 @@ Documentation is included within the `docs/` folder for a detailed description o
 To install the necessary dependencies, use the following:
 
 
-pip install -r requirements.txt
-
 ## Code Execution
 
 1. Clone this repository:
@@ -57,3 +55,15 @@ git clone https://github.com/STATS201-DKU-Autumn2024/Portfolio-Optimization.git
 cd Portfolio-Optimization
 ```
 2. Install dependencies:
+```
+pip install -r requirements.txt
+```
+3. Run the Jupyter notebooks or Python scripts for analysis:
+* For the model training and testing:
+```
+jupyter notebook model_notebook.ipynb
+```
+* For visualizations:
+```
+jupyter notebook visualization_notebook.ipynb
+```

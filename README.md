@@ -46,7 +46,7 @@ Documentation is included within the `docs/` folder for a detailed description o
 
 To install the necessary dependencies, use the following:
 
-```bash
+
 pip install -r requirements.txt
 
 ## Code Execution

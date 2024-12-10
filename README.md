@@ -48,3 +48,12 @@ To install the necessary dependencies, use the following:
 
 ```bash
 pip install -r requirements.txt
+
+## Code Execution
+
+1. Clone this repository:
+```
+git clone https://github.com/STATS201-DKU-Autumn2024/Portfolio-Optimization.git
+cd Portfolio-Optimization
+```
+2. Install dependencies:

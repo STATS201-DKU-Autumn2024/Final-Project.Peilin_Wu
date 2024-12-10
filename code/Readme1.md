@@ -1,13 +1,13 @@
 # Overview
-This project provides an integrated machine learning pipeline which can predict Bitcoin prices using a combination of diffusion models for noise handling and Long Short-Term Memory (LSTM) models for time series forecasting. The model is designed to provide investment suggestions, advising whether to take a long or short position in Bitcoin based on its predicted price movements to reach a low fluctuation. Key tasks include data collection, preprocessing, model training, and generating investment advice.
+This project provides an integrated machine learning pipeline which can predict Bitcoin prices using a combination of diffusion models for noise handling and transformer models for time series forecasting. The model is designed to provide investment suggestions, advising whether to take a long or short position in Bitcoin based on its predicted price movements to reach a low fluctuation. Key tasks include data collection, preprocessing, model training, and generating investment advice.
 
 # Files Included
-Untitled24.ipynb\
+code_of_the_model.ipynb\
 This is the main notebook that includes the following components:
 
 Data Collection and Preprocessing: Loading and processing Bitcoin price data along with sentiment analysis data.\
 Diffusion Model: A diffusion model to denoise the price data.\
-LSTM Model: A Long Short-Term Memory model for time series prediction of Bitcoin prices.\
+Transformer Model: A transformer model for time series prediction of Bitcoin prices.\
 Training and Evaluation: Code to train the models and output predictions and suggestions for investment strategies.\
 Data/bitcoin0.csv\
 Contains historical Bitcoin price data including time, open, close, high, low prices, and volumes.\
@@ -62,9 +62,9 @@ import torch.optim as optim
 
 # Diffusion model code (as defined in the notebook) goes here
 ```
-Train the LSTM model:
+Train the transformer model:
 ```
-# LSTM model training and evaluation code as defined in the notebook
+# Transformer model training and evaluation code as defined in the notebook
 ```
 ## Step 4: Generate Investment Suggestions
 After training the models, use the predictions to generate investment suggestions based on price fluctuations (e.g., long or short positions based on predicted price trends).
@@ -74,6 +74,7 @@ The expected outputs include:
 * Loss curve: The loss reduction over epochs while training the diffusion and LSTM models.
 * Predicted prices: The future Bitcoin prices predicted by the LSTM model.
 * Investment advice: A suggestion to invest in long or short positions based on the predicted trends and a fluctuation control of 10%.
+* MAE MSE: Both of them are lower than 0.1.
 ## Example Outputs:
 * Predicted price trends for the next few days or weeks.
 * Investment suggestion based on predicted volatility.

@@ -35,6 +35,9 @@ torch==1.9.0\
 matplotlib==3.4.3
 
 # Usage Instructions
+You can access to the notebook at links shown below:
+full codes (showing the evolution of the code):https://colab.research.google.com/drive/102viRpUAZXn4sVcTeXF4fEO4BzIhpr4J#scrollTo=5L8uMWnnaIJu
+code_of_the_model (shown in the GitHub)
 ## Step 1: Loading Datasets
 To load the Bitcoin price data, run the following code:
 ```

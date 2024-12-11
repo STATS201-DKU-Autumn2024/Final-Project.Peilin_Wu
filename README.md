@@ -11,7 +11,7 @@ This project was submitted for **STATS201: Machine Learning for Social Science**
 - Special thanks to **Prof. Luyao Zhang** for guidance and support throughout the project.
 - Thanks to our classmates for their collaborative feedback and constructive discussions.
 - We also acknowledge the support from **AIGC tools** and **open-source software**, which facilitated key aspects of our research and development.
-- **Data sources**: Historical cryptocurrency price and sentiment data from [Bitcoin and Dogecoin](https://github.com/STATS201-DKU-Autumn2024).
+- **Data sources**: Historical cryptocurrency price and sentiment data from Bitcoin and Dogecoin.
 
 ## Statement of Intellectual and Professional Growth
 This project has significantly contributed to my understanding of machine learning in the context of financial applications, particularly in portfolio optimization. Through the development of this model, I have gained hands-on experience with advanced techniques such as diffusion models, transformer networks, and sentiment analysis. This process has not only strengthened my technical skills but also deepened my appreciation for the ethical challenges in financial decision-making. By combining these tools, I have learned how to navigate the complexities of the cryptocurrency market while ensuring fairness and transparency in algorithmic trading.

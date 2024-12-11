@@ -24,7 +24,7 @@ This project has significantly contributed to my understanding of machine learni
 ## Table of Contents
 1. [Project Overview](#project-overview)
 2. [Code Execution](#code-execution)
-3. [Dependencies](#dependencies)
+3. [Dependencies](docs/Readme2.md)
 4. [Data Preprocessing](#data-preprocessing)
 5. [Model and Results](#model-and-results)
 6. [Contributing](#contributing)

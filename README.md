@@ -29,8 +29,7 @@ This project has significantly contributed to my understanding of machine learni
 5. [Model and Results](#model-and-results)
 6. [Contributing](#contributing)
 7. [Flow Chart](Flowchart.png)
-### Flow chart of the project
-[Flow Chart](Flowchart.png)
+
 
 
 ## Navigation Instructions

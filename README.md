@@ -28,6 +28,8 @@ This project has significantly contributed to my understanding of machine learni
 4. [Data Preprocessing](#data-preprocessing)
 5. [Model and Results](#model-and-results)
 6. [Contributing](#contributing)
+7. ![Flow Chart](Final-Project.Peilin_Wu/Flowchart.png)
+
 
 ## Navigation Instructions
 

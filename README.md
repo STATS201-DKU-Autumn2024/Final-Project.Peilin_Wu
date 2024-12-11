@@ -22,11 +22,11 @@ This project has significantly contributed to my understanding of machine learni
 [Watch the Demo Video](https://duke.zoom.us/rec/share/RwNcVhDeQaAQtY1m1aI-8a4Ml3YQvlyD2YR7hhkaY-in8Li3mUac39o18e6zQFMA.BWCQFuQQrsuTY21B?startTime=1733911457000)
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Code Execution](#code-execution)
+1. [Project Overview](code/Readme1.md)
+2. [Code Execution](code/Readme1.md)
 3. [Dependencies](docs/Readme2.md)
-4. [Data Preprocessing](#data-preprocessing)
-5. [Model and Results](#model-and-results)
+4. [Data Preprocessing](code/code_of_the_model.ipynb)
+5. [Model and Results](code/code_of_the_model.ipynb)
 6. [Contributing](#contributing)
 7. [Flow Chart](Flowchart.png)
 

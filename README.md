@@ -19,7 +19,7 @@ This project has significantly contributed to my understanding of machine learni
 ## Embedded Media
 [Demo Poster](https://www.canva.com/design/DAGUkskNM0s/lo3GT8v9tUPkjuYiA3Xueg/edit)
 
-[Watch the Demo Video]([demo.mp4](https://duke.zoom.us/rec/share/RwNcVhDeQaAQtY1m1aI-8a4Ml3YQvlyD2YR7hhkaY-in8Li3mUac39o18e6zQFMA.BWCQFuQQrsuTY21B?startTime=1733911457000))
+[Watch the Demo Video](https://duke.zoom.us/rec/share/RwNcVhDeQaAQtY1m1aI-8a4Ml3YQvlyD2YR7hhkaY-in8Li3mUac39o18e6zQFMA.BWCQFuQQrsuTY21B?startTime=1733911457000)
 
 ## Table of Contents
 1. [Project Overview](#project-overview)

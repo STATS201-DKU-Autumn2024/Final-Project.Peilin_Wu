@@ -36,8 +36,8 @@ matplotlib==3.4.3
 
 # Usage Instructions
 You can access to the notebook at links shown below:
-full codes (showing the evolution of the code):https://colab.research.google.com/drive/102viRpUAZXn4sVcTeXF4fEO4BzIhpr4J#scrollTo=5L8uMWnnaIJu
-code_of_the_model (shown in the GitHub)
+* Full codes (showing the evolution of the code):https://colab.research.google.com/drive/102viRpUAZXn4sVcTeXF4fEO4BzIhpr4J#scrollTo=5L8uMWnnaIJu
+* code_of_the_model (shown in the GitHub):https://colab.research.google.com/drive/12wYhOwULbY5AypTgHcR9N4Uur_dmVOuG?authuser=0#scrollTo=VUyb8nR_q0kh
 ## Step 1: Loading Datasets
 To load the Bitcoin price data, run the following code:
 ```

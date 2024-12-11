@@ -17,7 +17,7 @@ This project was submitted for **STATS201: Machine Learning for Social Science**
 This project has significantly contributed to my understanding of machine learning in the context of financial applications, particularly in portfolio optimization. Through the development of this model, I have gained hands-on experience with advanced techniques such as diffusion models, transformer networks, and sentiment analysis. This process has not only strengthened my technical skills but also deepened my appreciation for the ethical challenges in financial decision-making. By combining these tools, I have learned how to navigate the complexities of the cryptocurrency market while ensuring fairness and transparency in algorithmic trading.
 
 ## Embedded Media
-![Demo Poster]([path/to/poster.png](https://www.canva.com/design/DAGUkskNM0s/lo3GT8v9tUPkjuYiA3Xueg/edit))
+[Demo Poster]([path/to/poster.png](https://www.canva.com/design/DAGUkskNM0s/lo3GT8v9tUPkjuYiA3Xueg/edit))
 
 [Watch the Demo Video]([path/to/demo_video.mp4](https://duke.zoom.us/rec/share/RwNcVhDeQaAQtY1m1aI-8a4Ml3YQvlyD2YR7hhkaY-in8Li3mUac39o18e6zQFMA.BWCQFuQQrsuTY21B?startTime=1733911457000))
 
